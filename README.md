@@ -1,7 +1,7 @@
 # README
 
 Enter this command line to clone the repository on your computer.
-  git clone git@github.com:organization/project-name.git
+  git clone git@github.com:j-fagnoni/test-technique.git
 
 Execute the command line
   rails db:create
