@@ -1,0 +1,23 @@
+<%= link_to 'New Phone', new_phone_path, class: "button" %>
+
+<div class="phones-container">
+  <% @phones.each do |phone| %>
+    <div class="phone-card">
+      <h2><%= phone.name %></h2>
+      <div class="phone-info">
+        <div>
+          <p>Brand : <%= phone.brand %></p>
+          <p>Color : <%= phone.color %></p>
+        </div>
+        <div>
+          <p>IMEI : <%= phone.imei %></p>
+          <p>Storage : <%= phone.storage %></p>
+        </div>      
+      </div>
+      <div>
+        <%= link_to "Delete", "phones/#{phone.id}", class: "link", method: :delete %>
+        <%= link_to "Edit", "phones/#{phone.id}/edit", class: "link" %>
+      </div>
+    </div>
+  <% end %>
+</div>

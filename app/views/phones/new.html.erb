@@ -1,0 +1,24 @@
+<div class="form-container">
+  <%= form_for(@phone) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :brand %>
+    <%= f.text_field :brand %>
+    <%= f.label :imei %>
+    <%= f.text_field :imei %>
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+    <%= f.label :storage %>
+    <%= f.text_field :storage %>
+    <br>
+    <%= f.submit "Create" %>
+  <% end %>
+</div>
+<br>
+<%= link_to "Back", "/", class: "link"%>
+<br>
+<% if flash[:notice1] %>
+  <div><%= flash[:notice1] %></div>
+  <div><%= flash[:notice2] %></div>
+  <div><%= flash[:notice3] %></div>
+<% end %>
