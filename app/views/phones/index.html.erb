@@ -3,15 +3,14 @@
 <div class="phones-container">
   <% @phones.each do |phone| %>
     <div class="phone-card">
-      <h2><%= phone.name %></h2>
+      <h2><%= phone.name %> - <%= phone.storage %>Go</h2>
       <div class="phone-info">
         <div>
           <p>Brand : <%= phone.brand %></p>
-          <p>Color : <%= phone.color %></p>
+          <p>IMEI : <%= phone.imei %></p>
         </div>
         <div>
-          <p>IMEI : <%= phone.imei %></p>
-          <p>Storage : <%= phone.storage %></p>
+          <p>Color : <%= phone.color %></p>
         </div>      
       </div>
       <div>
